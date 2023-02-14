@@ -1,10 +1,9 @@
 package model.password;
 
 public class PasswordMinus extends PasswordCreator {
-    private static final String code = "abcdefghijklmnopqrstuvwxyz";
+    private static final String CODE = "abcdefghijklmnopqrstuvwxyz";
 
     public PasswordMinus(PasswordManager passwordManager) {
-        super(passwordManager);
-        super.code = code;
+        super(passwordManager, CODE);
     }
 }

@@ -3,12 +3,13 @@ package model.password;
 import java.util.Random;
 
 public class PasswordCreator {
-    protected String code = "";
+    private String code = "";
     private final Random random;
     private PasswordManager manager;
 
-    protected PasswordCreator(PasswordManager manager) {
+    protected PasswordCreator(PasswordManager manager, String code) {
         random = new Random();
+        this.code = code;
         this.manager = manager;
     }
 
@@ -39,7 +40,7 @@ public class PasswordCreator {
                     stringBuilder.setCharAt(position, secondPassword.charAt(random.nextInt(manager.passwordLength)));
                     count++;
                 }
-            } while (count < randomNumber);
+            } while (count <= randomNumber);
             lastPassword = stringBuilder.toString();
         }
         return lastPassword;

@@ -1,10 +1,9 @@
 package model.password;
 
 public class PasswordSymbols extends PasswordCreator {
-    private static final String code = ";_^¡¿?!\"#$%&'()*+,\\-.";
+    private static final String CODE = ";_^¡¿?!\"#$%&'()*+,\\-.";
 
     public PasswordSymbols(PasswordManager passwordManager) {
-        super(passwordManager);
-        super.code = code;
+        super(passwordManager, CODE);
     }
 }
