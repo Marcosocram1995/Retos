@@ -8,6 +8,6 @@
  * Al terminar el combate se calculará la experiencia ganada dependiendo de la diferencia de niveles de los pokémon.
  * Al ganar experiencia el pokémon ganará niveles y tendrá mejores atributos.
  * Cuanto más nivel más experiencia será necesaria para subir al siguiente nivel.
- * Habrá 5 tipos de pokémon: planta, agua, fuego, eléctrico, normal con sus respectivas debilidades y fortalezas.
+ * Habrá 5 tipos de pokémon: planta, agua, fuego, eléctrico y normal con sus respectivas debilidades y fortalezas.
  * Un pokémon eléctrico, por ejemplo, no podrá aprender ataques de otro tipo que no sea el suyo propio o de tipo normal.
  */
