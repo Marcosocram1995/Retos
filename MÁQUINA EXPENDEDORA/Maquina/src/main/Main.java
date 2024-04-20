@@ -12,7 +12,11 @@ public class Main {
         List<Product> productList = new ArrayList<>();
         createList(productList);
         VendingMachine vending = new VendingMachine(productList);
-        vending.enterCoin(Coin.ONEEURO);
+        vending.enterCoin(Coin.TWOEURO);
+        vending.enterCoin(Coin.TWOEURO);
+        vending.enterCoin(Coin.TWOEURO);
+        vending.enterCoin(Coin.TWOEURO);
+        vending.enterCoin(Coin.TWOEURO);
         vending.initialize();
     }
 
