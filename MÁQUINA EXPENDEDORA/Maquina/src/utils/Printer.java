@@ -116,7 +116,7 @@ public class Printer {
         HashMap<String, Integer> frecuencyMap = countRepeated(returnedCoins);
         print("\nDinero devuelto:\n");
         frecuencyMap.forEach((s, integer) -> print(s + " " + integer));
-        print("\n");
+        print("");
     }
 
     private HashMap<String, Integer> countRepeated(List<Coin> returnedCoins) {
@@ -129,5 +129,9 @@ public class Printer {
             }
         }
         return frecuencyMap;
+    }
+
+    public void byebye(){
+        print("¡Adiós, pase buen día!");
     }
 }

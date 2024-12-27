@@ -12,7 +12,7 @@ public class PasswordManager {
     protected int passwordLength;
     private List<Integer> changed;
 
-    public List<Integer> getChanged() {
+    protected List<Integer> getChanged() {
         return changed;
     }
 

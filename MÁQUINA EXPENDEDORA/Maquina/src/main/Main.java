@@ -13,10 +13,6 @@ public class Main {
         createList(productList);
         VendingMachine vending = new VendingMachine(productList);
         vending.enterCoin(Coin.TWOEURO);
-        vending.enterCoin(Coin.TWOEURO);
-        vending.enterCoin(Coin.TWOEURO);
-        vending.enterCoin(Coin.TWOEURO);
-        vending.enterCoin(Coin.TWOEURO);
         vending.initialize();
     }
 

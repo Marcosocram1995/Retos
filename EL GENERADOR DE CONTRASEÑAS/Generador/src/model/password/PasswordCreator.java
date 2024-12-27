@@ -5,7 +5,7 @@ import java.util.Random;
 public class PasswordCreator {
     private String code = "";
     private final Random random;
-    private PasswordManager manager;
+    private final PasswordManager manager;
 
     protected PasswordCreator(PasswordManager manager, String code) {
         random = new Random();

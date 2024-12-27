@@ -14,6 +14,7 @@ public class VendingMachine {
     private final Printer printer;
     private final Checker checker;
     private final int EXIT_ID = 999;
+    private final int SUCCESSFUL_TERMINATION = 0;
 
     public void initialize() {
         printer.welcome();
@@ -35,7 +36,8 @@ public class VendingMachine {
             coinPurse.transferBalanceToCash();
             printer.showReturnedCoins(coinPurse.calculateReturnedCoins());
             checkIfAllBalanceAreReturned();
-            initialize();
+            printer.byebye();
+            System.exit(SUCCESSFUL_TERMINATION);
         }
     }
 

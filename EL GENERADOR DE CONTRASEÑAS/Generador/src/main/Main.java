@@ -19,5 +19,9 @@ public class Main {
         passwordManager.removeConfiguration(ConfigurationPassword.SYMBOLS);
         passwordManager.initialize();
         System.out.println(passwordManager.getPasswordString());
+        passwordManager.removeConfiguration(ConfigurationPassword.MAYUS);
+        passwordManager.setPasswordLength(12);
+        passwordManager.initialize();
+        System.out.println(passwordManager.getPasswordString());
     }
 }

@@ -12,7 +12,7 @@ public class CoinPurse {
     private final List<Coin> balanceCoinList;
     private float balance;
     private float cash;
-    private final int COIN_AMOUNT = 10;
+    private final int COIN_AMOUNT = 2;
 
     public CoinPurse() {
         cashCoinList = new ArrayList<>();
